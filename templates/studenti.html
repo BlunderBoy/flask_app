@@ -1,0 +1,26 @@
+<table border=1>
+	<tr>
+		<td>Id</td>
+		<td>Nume</td>
+		<td>Prenume</td>
+		<td>Id clasa</td>
+		<td>Email</td>
+		<td>Numar telefon</td>
+		<td>Anul inrolarii</td>
+		<td>Data nastere</td>
+		<td>Medie</td>
+	</tr>
+	{% for student in studenti %}
+	<tr>
+		<td>{{student[0]}}</td>
+		<td>{{student[1]}}</td>
+		<td>{{student[2]}}</td>
+		<td>{{student[3]}}</td>
+		<td>{{student[4]}}</td>
+		<td>{{student[5]}}</td>
+		<td>{{student[6]}}</td>
+		<td>{{student[7]}}</td>
+		<td>{{student[8]}}</td>
+	</tr>
+	{% endfor %}
+</table>

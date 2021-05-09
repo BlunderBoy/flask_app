@@ -1,0 +1,16 @@
+<table border=1>
+	<tr>
+		<td>Id</td>
+		<td>Nume clasa</td>
+		<td>Profil</td>
+		<td>Id diriginte</td>
+	</tr>
+	{% for clasa in clase %}
+	<tr>
+		<td>{{clasa[0]}}</td>
+		<td>{{clasa[1]}}</td>
+		<td>{{clasa[2]}}</td>
+		<td>{{clasa[3]}}</td>
+	</tr>
+	{% endfor %}
+</table>
