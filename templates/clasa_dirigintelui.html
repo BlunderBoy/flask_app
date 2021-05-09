@@ -1,14 +1,11 @@
-<h1>Profesori</h1>
+<h1>Diriginti</h1>
 
 <table border=1>
 	<tr>
-		<td>Id</td>
-		<td>Materie</td>
-		<td>Prenume</td>
 		<td>Nume</td>
-		<td>Salariu</td>
-		<td>Anul inrolarii</td>
-		<td>Grad</td>
+		<td>Prenume</td>
+		<td>Materie</td>
+		<td>Nume clasa</td>
 	</tr>
 	{% for profesor in profesori %}
 	<tr>
@@ -16,9 +13,6 @@
 		<td>{{profesor[1]}}</td>
 		<td>{{profesor[2]}}</td>
 		<td>{{profesor[3]}}</td>
-		<td>{{profesor[4]}}</td>
-		<td>{{profesor[5]}}</td>
-		<td>{{profesor[6]}}</td>
 	</tr>
 	{% endfor %}
 </table>

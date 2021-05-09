@@ -1,0 +1,16 @@
+<h1>Sortare dupa grad</h1>
+
+<table border=1>
+	<tr>
+		<td>Nume</td>
+		<td>Prenume</td>
+		<td>Grad</td>
+	</tr>
+	{% for profesor in profesori %}
+	<tr>
+		<td>{{profesor[0]}}</td>
+		<td>{{profesor[1]}}</td>
+		<td>{{profesor[2]}}</td>
+	</tr>
+	{% endfor %}
+</table>
