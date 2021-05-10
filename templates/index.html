@@ -1,4 +1,99 @@
+<head>
+	<style>
+	#tabel {
+	  font-family: Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+	
+	#tabel td, #tabel th {
+	  border: 1px solid #ddd;
+	  padding: 8px;
+	}
+	
+	#tabel tr:nth-child(even){background-color: #f2f2f2;}
+	
+	#tabel tr:hover {background-color: #ddd;}
+	
+	#tabel th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: left;
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	.button {
+  	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+hr.green {
+  border: 10px solid green;
+  border-radius: 5px;
+}
+	</style>
+</head>
+
+<table>
+	<tr>
+		<td>
+			<a href="/">
+				<img src="static/cncv.jpg">
+			</a>
+		</td>
+		
+		<td>
+			<form method="POST" action="/">
+				<button class="button" type="submit">Acasa</button>
+			</form>
+			<form method="GET" action="/studenti">
+				<button class="button" type="submit">Studenti</button>
+			</form>
+			<form method="GET" action="/profesori">
+				<button class="button" type="submit">Profesori</button>
+			</form>
+		</td>
+	</tr>
+</table>
+
 <h1>Adaugare</h1>
+<hr class="green">
 <table>
 	<tr>
 		<td>
@@ -23,6 +118,7 @@
 <br>
 
 <h1> Afisare </h1>
+<hr class="green">
 <table>
 	<tr>
 		<td>
@@ -46,6 +142,7 @@
 </table>
 <br>
 <h1> Cautari studenti</h1>
+<hr class="green">
 <table>
 	<tr>
 		<td>
@@ -65,6 +162,7 @@
 
 <br>
 <h1> Cautari profesori</h1>
+<hr class="green">
 <table>
 	<tr>
 		<td>
@@ -82,6 +180,7 @@
 </table>
 
 <h1> Cautari clasa</h1>
+<hr class="green">
 <table>
 	<tr>
 		<td>

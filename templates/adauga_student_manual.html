@@ -1,24 +1,119 @@
+<head>
+	<style>
+		#tabel {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#tabel td,
+		#tabel th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#tabel tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#tabel tr:hover {
+			background-color: #ddd;
+		}
+
+		#tabel th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		input[type=text],
+		select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		div {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<table>
+	<tr>
+		<td>
+			<a href="/">
+				<img src="static/cncv.jpg">
+			</a>
+		</td>
+
+		<td>
+			<form method="POST" action="/">
+				<button class="button" type="submit">Acasa</button>
+			</form>
+			<form method="GET" action="/studenti">
+				<button class="button" type="submit">Studenti</button>
+			</form>
+			<form method="GET" action="/profesori">
+				<button class="button" type="submit">Profesori</button>
+			</form>
+		</td>
+	</tr>
+</table>
+<hr style="
+	border: 10px solid green;
+	border-radius: 5px;
+  ">
+
+
+
+<h1>Adauga un student</h1>
+
+
 <form method="POST" action="">
-	<table>
-		<tr>
-			<td>Id <input type="text" name="id" /></td>
-			<td>id_clasa <input type="text" name="id_clasa" /></td>
-		</tr>
-		<tr>
-			<td>Nume <input type="text" name="nume" /></td>
-			<td>Prenume <input type="text" name="prenume" /></td>
-		</tr>
-		<tr>
-			<td>email <input type="text" name="email" /></td>
-			<td>nr_telefon <input type="text" name="nr_telefon" /></td>
-		</tr>
-		<tr>
-			<td>anul_inrolarii [ZZ/LL/AN]<input type="text" name="anul_inrolarii" /></td>
-			<td>data_nasterii [ZZ/LL/AN]<input type="text" name="data_nasterii" /></td>
-		</tr>
-		<tr>
-			<td>medie <input type="text" name="medie" /></td>
-		</tr>
-	</table>
+	<td>Id <input type="text" name="id" /></td>
+	<td>Id clasa <input type="text" name="id_clasa" /></td>
+	<td>Nume <input type="text" name="nume" /></td>
+	<td>Prenume <input type="text" name="prenume" /></td>
+	<td>Email <input type="text" name="email" /></td>
+	<td>Numar telefon <input type="text" name="Numar telefon" /></td>
+	<td>Anul inrolarii[ZZ/LL/AN]<input type="text" name="anul_inrolarii" /></td>
+	<td>Data nasterii [ZZ/LL/AN]<input type="text" name="data_nasterii" /></td>
+	<td>Medie <input type="text" name="medie" /></td>
 	<input type="submit">
 </form>

@@ -1,6 +1,70 @@
+<head>
+	<style>
+	#tabel {
+	  font-family: Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+	
+	#tabel td, #tabel th {
+	  border: 1px solid #ddd;
+	  padding: 8px;
+	}
+	
+	#tabel tr:nth-child(even){background-color: #f2f2f2;}
+	
+	#tabel tr:hover {background-color: #ddd;}
+	
+	#tabel th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: left;
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	.button {
+  	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+	</style>
+</head>
+
+<table>
+	<tr>
+		<td>
+			<a href="/">
+				<img src="static/cncv.jpg">
+			</a>
+		</td>
+		
+		<td>
+			<form method="POST" action="/">
+				<button class="button" type="submit">Acasa</button>
+			</form>
+			<form method="GET" action="/studenti">
+				<button class="button" type="submit">Studenti</button>
+			</form>
+			<form method="GET" action="/profesori">
+				<button class="button" type="submit">Profesori</button>
+			</form>
+		</td>
+	</tr>
+</table>
+<hr style="
+	border: 10px solid green;
+	border-radius: 5px;
+  ">
+
+
 <h1>Diriginti</h1>
 
-<table border=1>
+<table id="tabel">
 	<tr>
 		<td>Nume</td>
 		<td>Prenume</td>
